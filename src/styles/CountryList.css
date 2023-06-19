@@ -1,0 +1,109 @@
+    @import url('./Styles.css');
+
+    .country-list-top {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .country-list h4 {
+        font-size: 1.5rem;
+        margin: 8px 0;
+        color: var(--secondary-color);
+    }
+
+    .country-list select {
+        appearance: none;
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+        flex: 1;
+        padding: 0 1em;
+        background-image: none;
+        cursor: pointer;
+    }
+
+    .country-list select::-ms-expand {
+        display: none;
+    }
+
+    .select-filtering {
+        position: relative;
+        display: flex;
+        width: 20em;
+        height: 3em;
+        border-radius: .25em;
+        overflow: hidden;
+    }
+
+    .select-filtering::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em;
+        background-color: #bebcbc;
+        transition: .25s all ease;
+        pointer-events: none;
+    }
+
+    .country-list .btn {
+        margin-top: 1rem;
+        padding: 8px 20px;
+        color: var(--secondary-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 0.5rem;
+        font-weight: 400;
+        transition: 0.4s;
+    }
+
+    .country-list .btn:hover {
+        background-color: var(--primary-color);
+    }
+
+    .country-list .list-group {
+        margin-top: 1.5rem;
+    }
+
+    .country-list .list-group-item {
+        border: none;
+        padding: 1rem;
+        background-color: var(--light-background-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .country-list .list-group-item h5 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--secondary-color);
+    }
+
+    .country-list .list-group-item p {
+        margin: 0;
+    }
+
+    .country-list .pagination {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 767px) {
+        .country-list-top {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .text-heading {
+            margin-top: 0.5rem;
+        }
+
+        .select-filtering {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 475px) {
+        .text-heading {
+            margin-top: 1.5rem;
+        }
+    }

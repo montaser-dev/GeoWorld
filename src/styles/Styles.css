@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+:root {
+    --primary-color: hsl(250, 66%, 75%);
+    --secondary-color: hsl(219, 15%, 15%);
+    --accent-color: hsl(251, 39%, 60%);
+    --background-color: #f2f2f2;
+    --light-background-color: #f8f9fa;
+    --pagination-color: hsl(250, 85%, 57%);
+    --pagination-hover-color: hsl(249, 26%, 56%);
+    --pagination-disabled-color: hsl(217, 4%, 65%);
+    }
+    
+body {
+    font-family: arial, tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.App {
+    margin-top: 70px;
+}
